@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Character Counter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Live Character Counter</h1>
+
+    <textarea 
+      id="textInput"
+      placeholder="Start typing here..."
+      maxlength="1000"
+    ></textarea>
+
+    <div class="limit-text">
+      Remaining: <span id="remaining">1000</span> / 1000
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <div class="stats">
+      <div class="card">Characters<br><span id="charCount">0</span></div>
+      <div class="card">Words<br><span id="wordCount">0</span></div>
+      <div class="card">Sentences<br><span id="sentenceCount">0</span></div>
+      <div class="card">Paragraphs<br><span id="paraCount">0</span></div>
+      <div class="card">Reading Time (mins)<br><span id="readingTime">0</span></div>
+      <div class="card">Without Spaces<br><span id="noSpaceCount">0</span></div>
+    </div>
+
+    <div class="buttons">
+      <button class="clear" id="clearBtn">Clear Text</button>
+      <button class="copy" id="copyBtn">Copy Text</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
